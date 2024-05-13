@@ -1,2 +1,2 @@
 # useModal
-A easy to use composable to display modal related to a container
+An easy to use composable to display modal related to a container
