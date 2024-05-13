@@ -75,10 +75,20 @@ const { open, close, toggle, patchOptions, patchPopperOptions } = useModal({
 ## context
 
 ```javascript
-// change the modal visibility and receive Optional data to pass to the modal component and lifecycle hooks.
-open();
-close();
-toggle();
+/* change the modal visibility and receive 
+Optional data to pass to the modal component and wrapper component as props and lifecycle hooks.
+*/
+open(payload);
+close(payload);
+toggle(payload);
 patchOptions(options);
 patchPopperOptions(options);
+```
+
+## Events
+
+emiting close event from wrapper component or modal component will close the modal
+
+```javascript
+emit("close");
 ```
